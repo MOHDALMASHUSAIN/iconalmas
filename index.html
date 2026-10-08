@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>iconalmas | Cybersecurity, AI & Critical Infrastructure</title>
+
+  <meta name="description" content="iconalmas develops cybersecurity, AI security and critical infrastructure solutions.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #071018;
+      color: #f5f7fa;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 16, 24, 0.95);
+      border-bottom: 1px solid #1c2a35;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      color: #b7c2cc;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+      background:
+        radial-gradient(circle at 80% 20%, #123044 0, transparent 35%),
+        #071018;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #315064;
+      color: #8ec5e8;
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.98;
+      letter-spacing: -4px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 span {
+      color: #6fc3ff;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #b7c2cc;
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border: 1px solid #6fc3ff;
+      border-radius: 5px;
+      color: #071018;
+      background: #6fc3ff;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #ffffff;
+      border-color: #405563;
+    }
+
+    section {
+      padding: 90px 7%;
+      border-top: 1px solid #15242f;
+    }
+
+    .section-label {
+      color: #6fc3ff;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 42px;
+      letter-spacing: -1.5px;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      max-width: 700px;
+      color: #aebbc5;
+      margin-bottom: 45px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid #243541;
+      background: #0b1720;
+      padding: 30px;
+      min-height: 190px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #9eacb7;
+    }
+
+    .research {
+      background: #09141d;
+    }
+
+    .research-box {
+      max-width: 900px;
+      border-left: 3px solid #6fc3ff;
+      padding: 10px 0 10px 30px;
+    }
+
+    .research-box h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .research-box p {
+      color: #aebbc5;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .about p {
+      color: #aebbc5;
+    }
+
+    .contact-box {
+      border: 1px solid #243541;
+      padding: 35px;
+      max-width: 800px;
+      background: #0b1720;
+    }
+
+    footer {
+      padding: 35px 7%;
+      border-top: 1px solid #1c2a35;
+      color: #7f8d98;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+      }
+
+      .cards,
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+
+      .hero {
+        padding: 70px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">iconalmas</div>
+
+    <div class="nav-links">
+      <a href="#focus">Focus</a>
+      <a href="#research">R&D</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <div class="tag">iconalmas cyber</div>
+
+        <h1>
+          Building for a<br>
+          <span>safer digital world.</span>
+        </h1>
+
+        <p>
+          iconalmas is developing cybersecurity and AI-driven solutions
+          for businesses, industrial systems and critical infrastructure.
+        </p>
+
+        <a class="button" href="#focus">Explore</a>
+        <a class="button secondary" href="#contact">Contact</a>
+
+      </div>
+    </section>
+
+
+    <section id="focus">
+
+      <div class="section-label">Current focus</div>
+
+      <h2>Cybersecurity</h2>
+
+      <p class="intro">
+        Our current work focuses on understanding complex cyber risks,
+        improving resilience and building intelligent security solutions.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>AI & Cybersecurity</h3>
+          <p>
+            Applying artificial intelligence to security investigation,
+            automation, analysis and decision support.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>OT / ICS Security</h3>
+          <p>
+            Exploring cybersecurity for industrial control systems,
+            operational technology and cyber-physical environments.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Critical Infrastructure</h3>
+          <p>
+            Researching cybersecurity challenges affecting systems
+            that businesses and communities depend on.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Cyber Resilience</h3>
+          <p>
+            Building approaches that help organizations understand,
+            prioritize and respond to cyber risk.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="research" class="research">
+
+      <div class="section-label">Research & Development</div>
+
+      <h2>Building, testing, learning.</h2>
+
+      <div class="research-box">
+
+        <h3>AI Critical Infrastructure Cyber-Resilience</h3>
+
+        <p>
+          Current R&D explores how security data from IT, OT, networks,
+          vulnerabilities and threat intelligence can be combined to
+          understand risk, identify priorities and improve cyber resilience.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section id="about">
+
+      <div class="about">
+
+        <div>
+          <div class="section-label">About iconalmas</div>
+
+          <h2>Technology with purpose.</h2>
+        </div>
+
+        <div>
+          <p>
+            iconalmas is an independent technology initiative focused
+            initially on cybersecurity, artificial intelligence and
+            critical infrastructure protection.
+          </p>
+
+          <br>
+
+          <p>
+            We believe meaningful cybersecurity is built through
+            research, experimentation and solving real-world problems.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="contact">
+
+      <div class="section-label">Contact</div>
+
+      <h2>Let's build something useful.</h2>
+
+      <div class="contact-box">
+
+        <p>
+          For cybersecurity research, collaboration and technology
+          discussions:
+        </p>
+
+        <br>
+
+        <a class="button" href="mailto:iconalmas@gmail.com">
+          Contact iconalmas
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div>© 2026 iconalmas</div>
+    <div>Cybersecurity • AI • Critical Infrastructure</div>
+  </footer>
+
+</body>
+</html>
